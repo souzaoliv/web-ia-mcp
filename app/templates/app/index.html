@@ -1,10 +1,14 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Welcome to the App</h1>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block title %}Página Inicial{% endblock title %}
+
+{% block content %}
+<main>
+    <h1 class="text-center mt-4 fw-bold">BlockLis IP's IA</h1>
+    <p class="text-center">Bem-vindo à página inicial do BlockLis IP's IA. Aqui você consegue bloquear endereços IP indesejados.</p>
+    <div class="input-group">
+        <button class="input-group-text">Chamar IA</button>
+        <textarea class="form-control"></textarea>
+    </div>
+</main>
+{% endblock content %}
